@@ -306,11 +306,14 @@ Defense Kali:
  	![ScreenShot](./screenshots/defense_kali_step_1_STORAGE.PNG)
 	
 MS-2:
-	RAM:![ScreenShot](./screenshots/msfadmin_step_1_RAM.PNG)
+	RAM:
+	![ScreenShot](./screenshots/msfadmin_step_1_RAM.PNG)
 	
-	CPU:![ScreenShot](./screenshots/msfadmin_step_1_CPU.PNG)
+	CPU:
+	![ScreenShot](./screenshots/msfadmin_step_1_CPU.PNG)
 	
-	Storage:![ScreenShot](./screenshots/msfadmin_step_1_STORAGE.PNG)
+	Storage:
+	![ScreenShot](./screenshots/msfadmin_step_1_STORAGE.PNG)
 
 ### **2. VM Login Verification**  
 - **Screenshots of successful login for all three VMs**  
