@@ -286,33 +286,33 @@ Russian Cyberattacks on Ukrainian and NATO Critical Infrastructure (2020–2024)
 ### **1. Virtual Machine Configuration**  
 - **Screenshots of Virtual Machine Settings**  
 Attack Kali:
-	RAM:
+RAM:
 	![ScreenShot](./screenshots/attack_kali_step_1_RAM.PNG)
 	
-	CPU:
+CPU:
 	![ScreenShot](./screenshots/attack_kali_step_1_CPU.PNG)
 	
-	Storage:
+Storage:
 	![ScreenShot](./screenshots/attack_kali_step_1_STORAGE.PNG)
 
 Defense Kali:
-	RAM:
+RAM:
  	![ScreenShot](./screenshots/defense_kali_step_1_RAM.PNG)
 	
-	CPU:
+CPU:
  	![ScreenShot](./screenshots/defense_kali_step_1_CPU.PNG)
 	
-	Storage:
+Storage:
  	![ScreenShot](./screenshots/defense_kali_step_1_STORAGE.PNG)
 	
 MS-2:
-	RAM:
+RAM:
 	![ScreenShot](./screenshots/msfadmin_step_1_RAM.PNG)
 	
-	CPU:
+CPU:
 	![ScreenShot](./screenshots/msfadmin_step_1_CPU.PNG)
 	
-	Storage:
+Storage:
 	![ScreenShot](./screenshots/msfadmin_step_1_STORAGE.PNG)
 
 ### **2. VM Login Verification**  
@@ -355,12 +355,12 @@ Attack/Defense Kali:
 	![ScreenShot](./screenshots/kali_step_4.PNG)
 	
 MS-2:
-	ifconfig:
+ifconfig:
 	![ScreenShot](./screenshots/msfadmin_step_4_1.PNG)
 	
 	
 	
-	MS-2:
+ip route:
 	![ScreenShot](./screenshots/msfadmin_step_4_2.PNG)
 	
 	
