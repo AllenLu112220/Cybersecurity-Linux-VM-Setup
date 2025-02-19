@@ -287,7 +287,7 @@ Russian Cyberattacks on Ukrainian and NATO Critical Infrastructure (2020–2024)
 - **Screenshots of Virtual Machine Settings**  
 Attack Kali:
 	RAM:![ScreenShot](/screenshots/attack_kali_step_1_RAM.png)
-	CPU:![ScreenShot](./screenshots/attack_kali_step_1_CPU.png)
+	CPU:![ScreenShot](./screenshots/attack_kali_step_1_CPU.PNG)
 	Storage:![ScreenShot](./screenshots/attack_kali_step_1_STORAGE.png)
 
 Defense Kali:
