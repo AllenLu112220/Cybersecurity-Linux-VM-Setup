@@ -300,13 +300,23 @@ Defense Kali:
  	![ScreenShot](./screenshots/defense_kali_step_1_CPU.PNG)
 	Storage:
  	![ScreenShot](./screenshots/defense_kali_step_1_STORAGE.PNG)
+	
 MS-2:
-	RAM:![ScreenShot](./screenshots/msfadmin_step1_RAM.PNG)
-	CPU:![ScreenShot](./screenshots/msfadmin_step1_CPU.PNG)
-	Storage:![ScreenShot](./screenshots/msfadmin_step1_STORAGE.PNG)
+	RAM:![ScreenShot](./screenshots/msfadmin_step_1_RAM.PNG)
+	CPU:![ScreenShot](./screenshots/msfadmin_step_1_CPU.PNG)
+	Storage:![ScreenShot](./screenshots/msfadmin_step_1_STORAGE.PNG)
 
 ### **2. VM Login Verification**  
 - **Screenshots of successful login for all three VMs**  
+
+Attack Kali:
+	![ScreenShot](./screenshots/attack_kali_step_2_LOGIN.PNG)
+
+Defense Kali:
+ 	![ScreenShot](./screenshots/defense_kali_step_2_LOGIN.PNG)
+	
+MS-2:
+	![ScreenShot](./screenshots/msfadmin_step_2_LOGIN.PNG)
 
 ---
 
@@ -314,14 +324,37 @@ MS-2:
 
 ### **1. Check System Information**  
 - **Screenshot of commands (`uname -a`, `uptime`, `whoami`, `df -h`)**  
+
+Attack/Defense Kali:
+	![ScreenShot](./screenshots/kali_step_3.PNG)
+	
+MS-2:
+	![ScreenShot](./screenshots/msfadmin_step_3.PNG)
+	
 - **Brief Explanation of Outputs**  
+
+uname -a: Provides details about the operating system, kernel version, and system architecture.
+uptime: Shows how long the system has been running, along with the load averages indicating system performance.
+whoami: Displays the current user logged into the system.
+df -h: Shows the amount of disk space used and available on the system’s filesystems.
 
 ---
 
 ### **2. View Network Configuration**  
 - **Screenshot of `ifconfig` or `ip a` and `ip route`**  
+Attack/Defense Kali:
+	![ScreenShot](./screenshots/kali_step_4.PNG)
+	
+MS-2:
+	![ScreenShot](./screenshots/msfadmin_step_4_1.PNG)
+	![ScreenShot](./screenshots/msfadmin_step_4_2.PNG)
+	
 - **Explanation of assigned IP and MAC addresses**  
+	Kali and MS-2 each have unique IP and MAC addresses used for network communication. IP identifies the device in the network, and MAC identifies it at the hardware level.
+
+
 - **Does the IP match the expected subnet? Explain why or troubleshoot.**  
+	Ensure the IP addresses fall within the expected subnet (e.g., 192.168.x.x). If they don’t, troubleshoot by checking network settings or reassigning IPs. They do in this case.
 
 ---
 
