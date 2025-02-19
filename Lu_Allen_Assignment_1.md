@@ -299,8 +299,12 @@ Defense Kali:
 	RAM:
  	![ScreenShot](./screenshots/defense_kali_step_1_RAM.PNG)
 	
+	
+	
 	CPU:
  	![ScreenShot](./screenshots/defense_kali_step_1_CPU.PNG)
+	
+	
 	
 	Storage:
  	![ScreenShot](./screenshots/defense_kali_step_1_STORAGE.PNG)
@@ -309,8 +313,12 @@ MS-2:
 	RAM:
 	![ScreenShot](./screenshots/msfadmin_step_1_RAM.PNG)
 	
+	
+	
 	CPU:
 	![ScreenShot](./screenshots/msfadmin_step_1_CPU.PNG)
+	
+	
 	
 	Storage:
 	![ScreenShot](./screenshots/msfadmin_step_1_STORAGE.PNG)
@@ -358,8 +366,12 @@ MS-2:
 	ifconfig:
 	![ScreenShot](./screenshots/msfadmin_step_4_1.PNG)
 	
-	From Metasploitable 2, ping Defense VM (Kali):
-	![ScreenShot](./screenshots/step_5_2.PNG)
+	
+	
+	MS-2:
+	![ScreenShot](./screenshots/msfadmin_step_4_2.PNG)
+	
+	
 	
 - **Explanation of assigned IP and MAC addresses**  
 	Kali and MS-2 each have unique IP and MAC addresses used for network communication. IP identifies the device in the network, and MAC identifies it at the hardware level.
