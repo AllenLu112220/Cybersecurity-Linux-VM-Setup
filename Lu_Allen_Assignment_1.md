@@ -358,8 +358,8 @@ MS-2:
 	ifconfig:
 	![ScreenShot](./screenshots/msfadmin_step_4_1.PNG)
 	
-	ip route:
-	![ScreenShot](./screenshots/msfadmin_step_4_2.PNG)
+	From Metasploitable 2, ping Defense VM (Kali):
+	![ScreenShot](./screenshots/step_5_2.PNG)
 	
 - **Explanation of assigned IP and MAC addresses**  
 	Kali and MS-2 each have unique IP and MAC addresses used for network communication. IP identifies the device in the network, and MAC identifies it at the hardware level.
