@@ -355,8 +355,10 @@ Attack/Defense Kali:
 	![ScreenShot](./screenshots/kali_step_4.PNG)
 	
 MS-2:
+	ifconfig:
 	![ScreenShot](./screenshots/msfadmin_step_4_1.PNG)
 	
+	ip route:
 	![ScreenShot](./screenshots/msfadmin_step_4_2.PNG)
 	
 - **Explanation of assigned IP and MAC addresses**  
