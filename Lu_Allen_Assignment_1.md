@@ -288,22 +288,28 @@ Russian Cyberattacks on Ukrainian and NATO Critical Infrastructure (2020–2024)
 Attack Kali:
 	RAM:
 	![ScreenShot](./screenshots/attack_kali_step_1_RAM.PNG)
+	
 	CPU:
 	![ScreenShot](./screenshots/attack_kali_step_1_CPU.PNG)
+	
 	Storage:
 	![ScreenShot](./screenshots/attack_kali_step_1_STORAGE.PNG)
 
 Defense Kali:
 	RAM:
  	![ScreenShot](./screenshots/defense_kali_step_1_RAM.PNG)
+	
 	CPU:
  	![ScreenShot](./screenshots/defense_kali_step_1_CPU.PNG)
+	
 	Storage:
  	![ScreenShot](./screenshots/defense_kali_step_1_STORAGE.PNG)
 	
 MS-2:
 	RAM:![ScreenShot](./screenshots/msfadmin_step_1_RAM.PNG)
+	
 	CPU:![ScreenShot](./screenshots/msfadmin_step_1_CPU.PNG)
+	
 	Storage:![ScreenShot](./screenshots/msfadmin_step_1_STORAGE.PNG)
 
 ### **2. VM Login Verification**  
@@ -347,6 +353,7 @@ Attack/Defense Kali:
 	
 MS-2:
 	![ScreenShot](./screenshots/msfadmin_step_4_1.PNG)
+	
 	![ScreenShot](./screenshots/msfadmin_step_4_2.PNG)
 	
 - **Explanation of assigned IP and MAC addresses**  
@@ -360,17 +367,57 @@ MS-2:
 
 ### **3. Test Connectivity Between VMs**  
 - **Screenshot of `ping` results between VMs**  
+	From Attacker VM (Kali), ping Metasploitable 2:
+	![ScreenShot](./screenshots/step_5_1.PNG)
+	
+	From Metasploitable 2, ping Defense VM (Kali):
+	![ScreenShot](./screenshots/step_5_2.PNG)
+	
 - **Explanation of success/failure and troubleshooting steps taken**  
+	Need to find the ip address of the VM being pinged using 'ifconfig' the address should be something like: 192.168.x.x
 
 ---
 
 ### **4. Network Scanning with Nmap**  
 - **Screenshot of `nmap -p 1-1024 <Metasploitable2-IP>`**  
+	![ScreenShot](./screenshots/step_6.PNG)
+	
 - **List five open ports and corresponding services**  
+	Port 21/tcp (FTP)
+	Port 22/tcp (SSH)
+	Port 80/tcp (HTTP)	
+	Port 445/tcp (Microsoft-DS)
+	Port 23/tcp (Telnet)
+	
 - **Security risks associated with detected ports**  
+	Port 21/tcp (FTP)
+	Risk: Unencrypted, making data (including credentials) vulnerable to interception.
+	
+	Port 22/tcp (SSH)
+	Risk: Brute force attacks can exploit weak passwords or misconfigurations like allowing root login.
+	
+	Port 80/tcp (HTTP)
+	Risk: Vulnerable to web-based attacks like SQL injection or XSS if the server or application is not secured.
+	
+	Port 445/tcp (Microsoft-DS)
+	Risk: Exposes the system to SMB vulnerabilities (e.g., EternalBlue), which can lead to remote code execution.
+	
+	Port 23/tcp (Telnet)
+	Risk: Sends data in plaintext, making it easy to intercept passwords and other sensitive information.
 
 ---
 
 ### **5. Check Running Processes & Active Connections**  
 - **Screenshot of `ps aux` and `netstat -tulnp` outputs**  
+	ps aux:
+	![ScreenShot](./screenshots/step_7_1.PNG)
+	
+	netstat -tulnp:
+	![ScreenShot](./screenshots/step_7_2.PNG)
 - **Explanation of any suspicious or unusual findings**  
+
+/usr/sbin/cron -f (PID: 600):
+	The cron daemon is responsible for executing scheduled tasks. If you have numerous scheduled tasks running on this system, this process should be checked for potential performance issues or failing jobs.
+
+/usr/lib/polkit-1/polkitd (PID: 587):
+	This process is related to PolicyKit, a framework for defining and handling authorizations. It usually runs quietly in the background, but it's important to ensure that it isn't being hijacked or used maliciously. A higher-than-usual memory or CPU usage might suggest problems.
